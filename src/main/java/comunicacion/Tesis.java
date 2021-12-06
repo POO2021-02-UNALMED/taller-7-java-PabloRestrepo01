@@ -28,7 +28,9 @@ public class Tesis extends Escrito {
 				+ getPaginas() + "\n"
 				+ idea + "\n"
 				+ argumentos.length + "\n"
-				+ conclusion;
+				+ conclusion + "\n"
+				+ referencias + "\n"
+				+ interpretacion;
 	}
 	
 	public String getIdea() {

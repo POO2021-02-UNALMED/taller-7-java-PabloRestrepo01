@@ -1,22 +1,23 @@
 package comunicacion;
 
 public class Libro extends Escrito {
-	public Libro(String co_autor, String editorial, String edicion, String interpretacion) {
-		super();
+	public Libro(String origen, String titulo, String autor, int paginas, String co_autor, String editorial, String edicion, String interpretacion) {
+		super(origen, titulo, autor, paginas);
 		this.co_autor = co_autor;
 		this.editorial = editorial;
 		this.edicion = edicion;
 		this.interpretacion = interpretacion;
 	}
+	
 	private String co_autor;
 	private String editorial;
 	private String edicion;
 	private String interpretacion;
 	
-	
 	public int palabrasTotales(int palabrasPagina) {
 		return getPaginas()*palabrasPagina*2;
 	}
+	
 	public String interpretacion() {
 		return interpretacion;
 	}

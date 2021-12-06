@@ -1,0 +1,46 @@
+package comunicacion;
+
+public class Periodico extends Escrito{
+	public Periodico(String fecha, String primicia, String interpretacion) {
+		super();
+		this.fecha = fecha;
+		this.primicia = primicia;
+		this.interpretacion = interpretacion;
+	}
+	private String fecha;
+	private String primicia;
+	private String interpretacion;
+	
+	public int palabrasTotales(int palabrasPagina) {
+		return getPaginas()*palabrasPagina*10;
+	}
+	public String interpretacion() {return interpretacion;}
+	public String toString() {
+		return getOrigen() + "\n"
+				+ getTitulo() + "\n"
+				+ getAutor() + "\n"
+				+ getPaginas() + "\n"
+				+ fecha + "\n"
+				+ primicia + "\n"
+				+ interpretacion;
+	}
+	
+	public String getFecha() {
+		return fecha;
+	}
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}
+	public String getPrimicia() {
+		return primicia;
+	}
+	public void setPrimicia(String primicia) {
+		this.primicia = primicia;
+	}
+	public String getInterpretacion() {
+		return interpretacion;
+	}
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
+	}
+}
